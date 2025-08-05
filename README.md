@@ -1,69 +1,78 @@
-# React + TypeScript + Vite
+# 🧠 MLOps Experiment Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern  dashboard for visualizing and comparing machine learning experiment logs.  
+Upload CSV file with experiment metrics, select experiments, define step limits, and analyze results interactively.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Features
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- 📊 **Metric Visualization**: Beautiful line charts for each metric across experiments.
+- 📁 **CSV Upload**: Simple uploader for experiment logs.
+- ✅ **Experiment Selector**: Choose which experiments to display.
+- 🔢 **Step Range Input**: Customize how many steps to visualize (e.g., 100, 500, 2000).
+- 🎨 **AI-themed UI**: TailwindCSS-powered futuristic design.
+- ⚡ **Fast & Lightweight**: Built with Vite + React + Recharts.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📦 Technologies Used
+
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Recharts](https://recharts.org/)
+- [Lucide Icons](https://lucide.dev/)
+- [PapaParse](https://www.papaparse.com/) (for CSV parsing)
+
+---
+
+## 📁 File Format
+
+CSV file should contain the following headers:
+
+```csv
+experiment_id,metric_name,step,value
+exp_1,accuracy,1,0.65
+exp_1,accuracy,2,0.68
+exp_2,accuracy,1,0.61
+...
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧪 Running Locally
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# Clone the repo
+git clone https://github.com/your-username/mlops-experiment-tracker.git
+cd mlops-experiment-tracker
+
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
 ```
+
+---
+
+## 🌐 Live Demo
+
+👉 [Visit the Live App on Vercel](https://mlops-experiment-tracker.vercel.app/)
+
+---
+
+## 💼 About This Project
+
+This project was created as a technical test task for a Frontend Engineer position at **Dataforce.solutions**.  
+It also demonstrates skills in data visualization, UI/UX design, and modern React development.
+
+
+
+
+
+### ✨ Developed by [Pavlo Antokhiv](https://www.linkedin.com/in/pavlo-antokhiv/)
