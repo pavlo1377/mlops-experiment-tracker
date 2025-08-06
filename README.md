@@ -64,6 +64,9 @@ npm run dev
 
 👉 [Visit the Live App on Vercel](https://mlops-experiment-tracker.vercel.app/)
 
+Please use the logs_25k.csv file to test the application.
+You can find it in the root directory of the project.
+
 ---
 
 ## 💼 About This Project
